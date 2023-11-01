@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Toss</title>
+    <link rel="icon" href="./images/icon.jpg">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+      <h2>Click on Toss Coin.</h2>
+      <div class="button">
+        <button onclick="coinToss()" id="coinButton"><p><h3>Toss Coin</h3></p></button>
+        <p id="result"></p>
+      </div>
+      <div class="coin">
+        <p>Player 1</p>
+        <div>
+            <select id="coin-value1" onchange="choiceUpdate()">
+                <option value="Head">Head</option>
+                <option value="Tail">Tail</option>
+            </select>
+        </div>
+        <img class="img1" src="./images/head.jpg" alt="head">
+      </div>
+
+      <div class="coin">
+        <p>Player 2</p>
+        <div>
+            <select id="coin-value2">
+                
+                <option value="Tail">Tail</option>
+                <option value="Head">Head</option>
+            </select>
+        </div>
+        <img class="img2" src="./images/tail.jpg" alt="tail">
+      </div>
+
+    </div>
+    
+
+<script src="./index.js"></script>
+</body>
+
+<footer>
+    Made with ❤️ for you.
+</footer>
+
+</html>
